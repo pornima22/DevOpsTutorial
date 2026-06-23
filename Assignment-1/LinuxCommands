@@ -1,0 +1,57 @@
+1. Creating and Renaming Files/Directories
+Create a directory named test_dir using mkdir.
+Inside test_dir, create an empty file called example.txt.
+Rename example.txt to renamed_example.txt using mv
+pornima.chakurkar@ LinuxCommandTutorial % mkdir test_dir
+pornima.chakurkar@ LinuxCommandTutorial % cd test_dir 
+pornima.chakurkar@ test_dir % touch example.txt.
+pornima.chakurkar@ test_dir % ls
+example.txt.
+pornima.chakurkar@ test_dir % mv example.txt. example.txt 
+pornima.chakurkar@ test_dir % ls
+example.txt
+pornima.chakurkar@ test_dir % mv example.txt renamed_example.txt
+pornima.chakurkar@ test_dir % ls
+renamed_example.txt
+2. Viewing File Contents
+Use cat to display the contents of /etc/passwd.
+Display only the first 5 lines of /etc/passwd using head.
+Display only the last 5 lines of /etc/passwd using tail.
+Cat /etc/passwd
+head -n 5  /etc/passwd
+tale -n 5  /etc/passwd
+3.Searching for Patterns
+Use grep to find all lines containing the word "root" in /etc/passwd.
+
+cat renamed_example.txt|grep map.put
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+4. Zipping and Unzipping
+Compress the test_dir directory into a file named test_dir.zip using zip.
+Unzip test_dir.zip into a new directory named unzipped_dir.
+tar -cvf compressed-folder.tar folder
+a folder
+a folder/compressed-folder.tar
+a folder/program.java
+—-------------------------------------------------------------------------------------------
+tar -xvf compressed-folder.tar folder
+x folder/
+x folder/compressed-folder.tar
+x folder/program.java
+
+5. Downloading Files
+Use wget to download a file from a URL (e.g., https://example.com/sample.txt).
+Wget https://example.com/sample.txt
+curl -O https://gist.githubusercontent.com/Talha-Altair/b8a27d2b45add1dd7658fd34fa1968db/raw/bc45208c96df65e8e659c04e7d1f1bb54ec5b7e2/linux_commands.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1742  100  1742    0     0   1649      0  0:00:01  0:00:01 --:--:--  1651
+
+
+6. Changing Permissions
+Create a file named secure.txt and change its permissions to read-only for everyone using chmod.
+chmod -w linux_commands.txt 
+
+7. Working with Environment Variables
+Use export to set a new environment variable called MY_VAR with the value "Hello, Linux!".
+Export $MY_VAR="Hello, Linux!"
+
